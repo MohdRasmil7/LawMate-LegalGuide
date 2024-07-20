@@ -1,10 +1,11 @@
-# Empower Your Rights with LawMate: Your Personal Legal Guide
+# Empower Your Rights with LawMate: Your Personal Legal Guide ⚖️📚
 
 ## Overview
 
 This project is a Legal Chatbot powered by Large Language Models (LLM) and RAG model. It allows users to ask questions related to legal terms and receive accurate responses. The chatbot utilizes a RAG (Retrieval-Augmented Generation) model to enhance its performance.
 
-![](assets/demo.png)
+![](assets/image2.png)
+![](assets/image.png)
 
 ## Features
 
@@ -32,8 +33,8 @@ This project is a Legal Chatbot powered by Large Language Models (LLM) and RAG m
 ## Installation
 
 ```bash
-git clone https://github.com/your_username/.git
-cd
+git clone https://github.com/your_username/LawMate-LegalGuide-using-RAG.git
+cd LawMate-LegalGuide-using-RAG
 pip install -r requirements.txt
 python app.py
 ```
