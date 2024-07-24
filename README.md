@@ -2,7 +2,7 @@
 
 ## Overview
 
-LawMate is a personal legal assistant designed to help users navigate the complexities of the Indian Constitution and legal matters. The application leverages Retrieval-Augmented Generation (RAG) with a Language Learning Model (LLM) to provide accurate and helpful legal advice in real-time. 🤖✨
+LawMate is a personal legal assistant crafted to assist users in navigating the complexities of the Indian Constitution and various legal matters. The application utilizes Retrieval-Augmented Generation (RAG) in conjunction with a Language Learning Model (LLM) to deliver accurate and real-time legal advice. 🤖✨
 
 
 ![](assets/image2.png)
