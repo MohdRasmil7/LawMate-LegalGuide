@@ -1,4 +1,4 @@
-# LawMate: Your Personal Legal Assistant ⚖️📚
+# LawMate: Your Legal Guide and Advisor ⚖️📚
 
 ## Overview
 
