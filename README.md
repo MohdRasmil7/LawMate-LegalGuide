@@ -27,9 +27,9 @@ LawMate is designed to be an accessible and reliable resource for legal advice. 
 - **Python**
 - **Streamlit**: For building the web interface
 - **LangChain**: For implementing the RAG model
-- **PyPDF2**: For processing PDF documents
+- **PyPDF2**: For processing PDF documents 📄
 - **FAISS**: For efficient similarity search
-- **Google Generative AI**: For generating embeddings
+- **Google Generative AI**: For generating embeddings 🌐
 
 ## Setup and Installation
 
@@ -65,8 +65,8 @@ LawMate is designed to be an accessible and reliable resource for legal advice. 
 ## Usage
 
 1. Open the application in your web browser.
-2. Click on the "Activate Embedding" button to start the embedding process. Wait for the completion message.
-3. Input your legal queries in the chat box and receive responses in real-time.
+2. Click on the "Activate Embedding" button to start the embedding process. Wait for the completion message. ⌛
+3. Input your legal queries in the chat box and receive responses in real-time. 💬
 
 ## Code Explanation
 
@@ -176,4 +176,4 @@ if user_prompt:
 
 ## Contact
 
-For any inquiries or feedback, please contact [Muhammed Rasmil] at [muhammedrasmil2001@gmail.com].
+For any inquiries or feedback, please contact [Muhammed Rasmil] at [muhammedrasmil2001@gmail.com].📧
