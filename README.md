@@ -16,6 +16,7 @@ LawMate is a personal legal assistant designed to help users navigate the comple
 4. [Usage](#usage)
 5. [Code Explanation](#code-explanation)
 6. [Future Enhancements](#future-enhancements)
+7. [Contact](#Contact)
 
 ## Introduction
 
