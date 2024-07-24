@@ -37,7 +37,7 @@ LawMate is designed to be an accessible and reliable resource for legal advice. 
    bash
    git clone https://github.com/your-repo/LawMate-LegalGuide-using-RAG.git
 
-   cd lawmate
+   cd LawMate-LegalGuide-using-RAG
    
 
 2. **Install the required packages:**
