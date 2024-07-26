@@ -35,32 +35,32 @@ LawMate is designed to be an accessible and reliable resource for legal advice. 
 
 1. **Clone the repository:**
 
-   bash
+   ```bash
    git clone https://github.com/your-repo/LawMate-LegalGuide-using-RAG.git
 
    cd LawMate-LegalGuide-using-RAG
-   
+   ```
 
 2. **Install the required packages:**
 
-   bash
+   ```bash
    pip install -r requirements.txt
-   
+   ```
 
 3. **Set up environment variables:**
 
    Create a `.env` file in the root directory and add your API keys:
 
-   
+   ```bash
    GROQ_API_KEY=your_groq_api_key
    GOOGLE_API_KEY=your_google_api_key
-   
+   ```
 
 4. **Run the Streamlit application:**
 
-   bash
+   ```bash
    streamlit run app.py
-   
+   ```
 
 ## Usage
 
@@ -73,6 +73,7 @@ LawMate is designed to be an accessible and reliable resource for legal advice. 
 ### Importing Required Libraries
 
 python
+```
 import streamlit as st
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
@@ -86,29 +87,32 @@ from langchain.chains.retrieval import create_retrieval_chain
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 import os
-
+```
 
 ### Setting Up Environment Variables
 
 python
+```
 load_dotenv()
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 os.environ['GOOGLE_API_KEY'] = os.getenv('GOOGLE_API_KEY')
-
+```
 
 ### Streamlit UI Elements
 
 python
+```
 st.title('LawMate using Rag LLM')
 st.info('''Welcome to LawMate! Your Personal Legal Assistant ⚖📚
 
 Description: LawMate is your go-to companion for navigating the complexities of the Indian Constitution and legal matters. Whether you have questions about your rights, need guidance on legal procedures, or want to understand constitutional provisions, LawMate is here to help 🤗.
 ''')
-
+```
 
 ### Initializing LLM and Prompt Template
 
 python
+```
 llm = ChatGroq(model="llama3-70b-8192")
 
 prompt = ChatPromptTemplate.from_template(
@@ -129,11 +133,12 @@ Your response should consist solely of helpful advice without any extraneous det
 Helpful advice:
 '''
 )
-
+```
 
 ### Embedding Function
 
 python
+```
 place_holder = st.empty()
 
 def vector_embedding():
@@ -149,11 +154,12 @@ def vector_embedding():
 if st.button('activate embedding'):
     place_holder.write('Embedding started. Please wait... it may take a few moments...⌛⌛')
     vector_embedding()
-
+```
 
 ### Handling User Queries
 
 python
+```
 user_prompt = st.chat_input('Enter your queries')
 
 if user_prompt:
@@ -163,7 +169,7 @@ if user_prompt:
     retriever_chain = create_retrieval_chain(retriever, document_chain)
     response = retriever_chain.invoke({'input': user_prompt})
     st.chat_message('assistant').markdown(response['answer'])
-
+```
 
 ## Future Enhancements
 
